@@ -1,0 +1,41 @@
+
+<h4 class="display-8 text-center">Create new message </h4>
+<hr>
+<div id="theForm">
+  <form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+    <input type="hidden" name="MessageId" [value]="service.formData.MessageId">
+    <div class="form-group">
+      <select class="form-control" name="SenderName" required #SenderName="ngModel" [(ngModel)]="service.formData.SenderName" [ngModelOptions]="{standalone: true}" (ngModelChange)="onChange_sender($event)">
+        <option value="" selected disabled hidden>Select User</option>
+        <option *ngFor="let u of users" [ngValue]="u.UserName"> {{u.UserName}} </option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <textarea class="form-control" rows="10" type="text" name="MessageBody" #MessageBody="ngModel" [(ngModel)]="service.formData.MessageBody"required></textarea>
+    </div>
+
+    <div class="form-group">
+      <select class="form-control" name="RecipientName" required #RecipientName="ngModel" [(ngModel)]="service.formData.RecipientName" [ngModelOptions]="{standalone: true}" (ngModelChange)="onChange_recepient($event)">
+        <option value="" selected disabled hidden>Send to</option>
+        <option *ngFor="let u of users" [ngValue]="u.UserName"> {{u.UserName}} </option>
+        <option value="allUsers">Send to all users</option>
+      </select>
+    </div>
+
+    <div class="form-group wrapper">
+      <button  class="btn btn-primary" type="reset" (click)="onReset()">Clear message</button>
+      <button class="btn btn-success" type="submit" [disabled]="form.invalid">Send</button>
+    </div>
+
+    <!--<div class="text-right">
+     
+    </div>-->
+
+  </form>
+
+</div>
+ 
+
+
+

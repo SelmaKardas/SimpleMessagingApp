@@ -1,0 +1,46 @@
+
+#theForm button {
+  width: 45%;
+  margin:5px;
+  
+}
+
+.wrapper {
+  text-align: center;
+ 
+}
+
+
+
+
+table {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  min-width: 500px;
+}
+
+.mat-input-label {
+  background-color:azure;
+}
+
+
+.mat-row.highlighted {
+  background: #42A948;
+}
+
+
+.mat-header-cell {
+  text-align: left;
+  max-width: 300px;
+  padding: 5px;
+}
+
+.mat-input-label {
+  background-color: azure;
+}
+
+.filter {
+  display: block;
+}
+

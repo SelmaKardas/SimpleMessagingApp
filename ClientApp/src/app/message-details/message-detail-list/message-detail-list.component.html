@@ -1,0 +1,64 @@
+<form #form="ngForm" autocomplete="off">
+  <div class="form-group">
+    <h4 class="display-8 text-center">All messages</h4>
+    <hr>
+    <table mat-table [dataSource]="service.dataSource">
+      <ng-container matColumnDef="SenderName">
+        <tr>
+          <th class="header" mat-header-cell *matHeaderCellDef>
+            Sender
+            <mat-form-field class="filter" floatLabel="never">
+              <mat-label>Search</mat-label>
+              <input matInput [formControl]="senderFilter">
+            </mat-form-field>
+          </th>
+          <td mat-cell *matCellDef="let row" (click)="onSelectRow($event,row)"> {{row.SenderName}} </td>
+        </tr>
+      </ng-container>
+      <ng-container matColumnDef="MessageBody">
+        <tr>
+          <th class="header" mat-header-cell *matHeaderCellDef>
+            Message
+            <mat-form-field class="filter" floatLabel="never">
+              <mat-label>Search</mat-label>
+              <input matInput [formControl]="messageFilter">
+            </mat-form-field>
+          </th>
+          <td mat-cell *matCellDef="let row" (click)="onSelectRow($event,row)"> {{row.MessageBody}} </td>
+        </tr>
+      </ng-container>
+      <ng-container matColumnDef="RecipientName">
+        <tr>
+          <th class="header" mat-header-cell *matHeaderCellDef>
+            Recipient
+            <mat-form-field class="filter" floatLabel="never">
+              <mat-label>Search</mat-label>
+              <input matInput [formControl]="recipientFilter">
+            </mat-form-field>
+          </th>
+          <td mat-cell *matCellDef="let row" (click)="onSelectRow($event,row)"> {{row.RecipientName}} </td>
+        </tr>
+      </ng-container>
+      <ng-container matColumnDef="CreationDate">
+        <tr>
+          <th class="header" mat-header-cell *matHeaderCellDef>
+            Date
+            <mat-form-field class="filter" floatLabel="never">
+              <mat-label>Search</mat-label>
+              <input matInput [formControl]="dateFilter">
+            </mat-form-field>
+          </th>
+          <td mat-cell *matCellDef="let row" (click)="onSelectRow($event,row)"> {{row.CreationDate | date}} </td>
+        </tr>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns" [ngClass]="{highlighted: selectedRowIndex == row.MessageId}"></tr>
+    </table>
+
+  </div>
+</form>
+
+
+
+
+
