@@ -1,0 +1,14 @@
+C:\Users\Selma\source\repos\ProjectUsers\ProjectUsers\bin\Debug\netcoreapp2.2\ProjectUsers.deps.json
+C:\Users\Selma\source\repos\ProjectUsers\ProjectUsers\bin\Debug\netcoreapp2.2\ProjectUsers.runtimeconfig.json
+C:\Users\Selma\source\repos\ProjectUsers\ProjectUsers\bin\Debug\netcoreapp2.2\ProjectUsers.runtimeconfig.dev.json
+C:\Users\Selma\source\repos\ProjectUsers\ProjectUsers\bin\Debug\netcoreapp2.2\ProjectUsers.dll
+C:\Users\Selma\source\repos\ProjectUsers\ProjectUsers\bin\Debug\netcoreapp2.2\ProjectUsers.pdb
+C:\Users\Selma\source\repos\ProjectUsers\ProjectUsers\obj\Debug\netcoreapp2.2\ProjectUsers.csprojAssemblyReference.cache
+C:\Users\Selma\source\repos\ProjectUsers\ProjectUsers\obj\Debug\netcoreapp2.2\ProjectUsers.csproj.CoreCompileInputs.cache
+C:\Users\Selma\source\repos\ProjectUsers\ProjectUsers\obj\Debug\netcoreapp2.2\ProjectUsers.RazorAssemblyInfo.cache
+C:\Users\Selma\source\repos\ProjectUsers\ProjectUsers\obj\Debug\netcoreapp2.2\ProjectUsers.RazorAssemblyInfo.cs
+C:\Users\Selma\source\repos\ProjectUsers\ProjectUsers\obj\Debug\netcoreapp2.2\ProjectUsers.AssemblyInfoInputs.cache
+C:\Users\Selma\source\repos\ProjectUsers\ProjectUsers\obj\Debug\netcoreapp2.2\ProjectUsers.AssemblyInfo.cs
+C:\Users\Selma\source\repos\ProjectUsers\ProjectUsers\obj\Debug\netcoreapp2.2\ProjectUsers.RazorTargetAssemblyInfo.cache
+C:\Users\Selma\source\repos\ProjectUsers\ProjectUsers\obj\Debug\netcoreapp2.2\ProjectUsers.dll
+C:\Users\Selma\source\repos\ProjectUsers\ProjectUsers\obj\Debug\netcoreapp2.2\ProjectUsers.pdb
